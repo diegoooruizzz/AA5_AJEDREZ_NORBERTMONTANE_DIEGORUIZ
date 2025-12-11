@@ -18,6 +18,22 @@
 #define REINA_NEGRA -5
 #define REY_NEGRO -6
 
+
+#define VACIO '*'
+#define PEON_BLANCO 'P'
+#define PEON_NEGRO  'p'
+#define TORRE_BLANCA 'T'
+#define CABALLO_BLANCO 'H'
+#define ALFIL_BLANCO 'B'
+#define REINA_BLANCA 'Q'
+#define REY_BLANCO 'K'
+
+#define TORRE_NEGRA 't'
+#define CABALLO_NEGRO 'h'
+#define ALFIL_NEGRO 'b'
+#define REINA_NEGRA 'q'
+#define REY_NEGRO 'k'
+
 // Declaración del tablero
 char tablero[TABLERO_VERTICAL][TABLERO_HORIZONTAL];
 
@@ -47,13 +63,16 @@ char tablero[TABLERO_VERTICAL][TABLERO_HORIZONTAL];
 	}
 
 	//Inicializar Numeros
-	void InicializarNumeros() {
+	void inicializarNumeros() {
 		for (int i = 0; i < TABLERO_VERTICAL; i++) {
-			tablero[8][i] = PIEZAS_BLANCAS;
+			tablero[6][i] = 'P';
+			
+		
 		}
 		for (int j = 0; j < TABLERO_HORIZONTAL; j++)
 		{
-			tablero[-8][j] = PIEZAS_NEGRAS;
+			tablero[1][j] = 'p';
+			
 		}
 	}
 
@@ -85,8 +104,9 @@ int main() {
 	//Funciones
 	
 	inicializarTablero();
+	inicializarNumeros();
 	mostrarTablero();
-
+	
 	 
 return 0;
 
