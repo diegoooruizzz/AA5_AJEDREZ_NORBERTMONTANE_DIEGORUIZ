@@ -2,50 +2,62 @@
 #include <string>
 #include <cstdlib>
 
-#define TABLERO 8
+#define TABLERO_VERTICAL 8
+#define TABLERO_HORIZONTAL 8
 #define TABLERO_VACIO 0
-#define PIEZAS_BLANCAS 1
+#define PIEZAS_BLANCAS 8
 #define TORRE_BLANCA 2
 #define CABALLO_BLANCO 3
 #define ALFIL_BLANCO 4
 #define REINA_BLANCA 5
 #define REY_BLANCO 6
-#define PIEZAS_NEGRAS -1
-#define TORRE_NEGRA -2
+#define PIEZAS_NEGRAS -8
+#define TORRE_NEGRA -2 
 #define CABALLO_NEGRO -3
 #define ALFIL_NEGRO -4
 #define REINA_NEGRA -5
 #define REY_NEGRO -6
 
 // Declaración del tablero
-int tablero[TABLERO][TABLERO];
+char tablero[TABLERO_VERTICAL][TABLERO_HORIZONTAL];
 
-
-int main() {
 
 
 	//Inicializar Tablero
-	void Inicializartablero(); {
-		for (int i = 0; i < TABLERO; i++)
+	void inicializarTablero() {
+		for (int i = 0; i < TABLERO_VERTICAL; i++)
 		{
-			for (int j = 0; j < TABLERO; j++)
+			for (int j = 0; j < TABLERO_HORIZONTAL; j++)
 			{
 				tablero[i][j] = '*';
 			}
 		}
 	}
-	//Inicializar Numeros
-	void InicializarNumeros(); {
-		for (int i = 0; i < TABLERO; i++) {
-			tablero[1][i] = PIEZAS_BLANCAS;
-		}
-		for (int j = 0; j < TABLERO; j++)
+	
+	void mostrarTablero() {
+		for (int i = 0; i < TABLERO_VERTICAL; i++)
 		{
-			tablero[-1][j] = PIEZAS_NEGRAS;
+
+			for (int j = 0; j < TABLERO_HORIZONTAL; j++)
+		{
+				std::cout << tablero[i][j] << ' ';
+			}
+			std::cout << std::endl;
 		}
 	}
 
-	void inicializarPiezas(); {
+	//Inicializar Numeros
+	void InicializarNumeros() {
+		for (int i = 0; i < TABLERO_VERTICAL; i++) {
+			tablero[8][i] = PIEZAS_BLANCAS;
+		}
+		for (int j = 0; j < TABLERO_HORIZONTAL; j++)
+		{
+			tablero[-8][j] = PIEZAS_NEGRAS;
+		}
+	}
+
+	void inicializarPiezas() {
 		//Piezas blancas
 		tablero[7][2] = TORRE_BLANCA;
 		tablero[7][3] = CABALLO_BLANCO;
@@ -68,18 +80,14 @@ int main() {
 		tablero[0][-9] = TORRE_NEGRA;
 	}
 
-	void mostrarTablero(); {
-		for (int i = 0; i < TABLERO; i++) {
-			for (int j = 0; j < TABLERO; j++) {
-				printf("%2d ", tablero[i][j]);  // muestra el valor de cada casilla
-			}
-			printf("\n");
-		}
-	}
+int main() {
 
+	//Funciones
 	
-	void mostrarTablero();
-	
+	inicializarTablero();
+	mostrarTablero();
+
+	 
 return 0;
 
 }
