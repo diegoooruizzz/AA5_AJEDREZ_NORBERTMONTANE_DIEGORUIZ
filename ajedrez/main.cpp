@@ -1,113 +1,99 @@
 #include <iostream>
-#include <string>
-#include <cstdlib>
+#include <windows.h>
+#include "define.h"
 
-#define TABLERO_VERTICAL 8
-#define TABLERO_HORIZONTAL 8
-#define TABLERO_VACIO 0
-#define PIEZAS_BLANCAS 8
-#define TORRE_BLANCA 2
-#define CABALLO_BLANCO 3
-#define ALFIL_BLANCO 4
-#define REINA_BLANCA 5
-#define REY_BLANCO 6
-#define PIEZAS_NEGRAS -8
-#define TORRE_NEGRA -2 
-#define CABALLO_NEGRO -3
-#define ALFIL_NEGRO -4
-#define REINA_NEGRA -5
-#define REY_NEGRO -6
+using namespace std;
 
+// Definici√≥n de la variable global
+char tablero[TABLERO_FILAS][TABLERO_COLUMNAS];
 
-#define VACIO '*'
-#define PEON_BLANCO 'P'
-#define PEON_NEGRO  'p'
-#define TORRE_BLANCA 'T'
-#define CABALLO_BLANCO 'H'
-#define ALFIL_BLANCO 'B'
-#define REINA_BLANCA 'Q'
-#define REY_BLANCO 'K'
+void inicializarTablero() {
+    // 1. Llenar todo de vacio
+    for (int i = 0; i < TABLERO_FILAS; i++) {
+        for (int j = 0; j < TABLERO_COLUMNAS; j++) {
+            tablero[i][j] = VACIO;
+        }
+    }
 
-#define TORRE_NEGRA 't'
-#define CABALLO_NEGRO 'h'
-#define ALFIL_NEGRO 'b'
-#define REINA_NEGRA 'q'
-#define REY_NEGRO 'k'
+    // 2. Colocar Piezas Negras (Fila 0 / Rank 8)
+    // Orden imagen: t h b k q b h t
+    tablero[0][0] = TORRE_NEGRA;
+    tablero[0][1] = CABALLO_NEGRO;
+    tablero[0][2] = ALFIL_NEGRO;
+    tablero[0][3] = REY_NEGRO;
+    tablero[0][4] = REINA_NEGRA;
+    tablero[0][5] = ALFIL_NEGRO;
+    tablero[0][6] = CABALLO_NEGRO;
+    tablero[0][7] = TORRE_NEGRA;
 
-// DeclaraciÛn del tablero
-char tablero[TABLERO_VERTICAL][TABLERO_HORIZONTAL];
+    // Peones Negros (Fila 1 / Rank 7)
+    for (int j = 0; j < TABLERO_COLUMNAS; j++) {
+        tablero[1][j] = PEON_NEGRO;
+    }
 
+    // 3. Colocar Piezas Blancas (Fila 7 / Rank 1)
+    // Orden imagen: T H B Q K B H T
+    tablero[7][0] = TORRE_BLANCA;
+    tablero[7][1] = CABALLO_BLANCO;
+    tablero[7][2] = ALFIL_BLANCO;
+    tablero[7][3] = REINA_BLANCA;
+    tablero[7][4] = REY_BLANCO;
+    tablero[7][5] = ALFIL_BLANCO;
+    tablero[7][6] = CABALLO_BLANCO;
+    tablero[7][7] = TORRE_BLANCA;
 
+    // Peones Blancos (Fila 6 / Rank 2)
+    for (int j = 0; j < TABLERO_COLUMNAS; j++) {
+        tablero[6][j] = PEON_BLANCO;
+    }
+}
 
-	//Inicializar Tablero
-	void inicializarTablero() {
-		for (int i = 0; i < TABLERO_VERTICAL; i++)
-		{
-			for (int j = 0; j < TABLERO_HORIZONTAL; j++)
-			{
-				tablero[i][j] = '*';
-			}
-		}
-	}
-	
-	void mostrarTablero() {
-		for (int i = 0; i < TABLERO_VERTICAL; i++)
-		{
+void mostrarTablero() {
+    // Colores para consola Windows
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    
+    // Imprimir indices de columnas: 1 2 3 ... 8
+    SetConsoleTextAttribute(hConsole, 9); // Azul claro
+    cout << "   "; // Espacio para el numero de fila
+    for (int j = 0; j < TABLERO_COLUMNAS; j++) {
+        cout << j + 1 << " ";
+    }
+    cout << endl;
 
-			for (int j = 0; j < TABLERO_HORIZONTAL; j++)
-		{
-				std::cout << tablero[i][j] << ' ';
-			}
-			std::cout << std::endl;
-		}
-	}
+    // Imprimir filas
+    for (int i = 0; i < TABLERO_FILAS; i++) {
+        // Numero de fila a la izquierda (8 bajando a 1)
+        SetConsoleTextAttribute(hConsole, 9); // Azul claro
+        cout << 8 - i << "  ";
 
-	//Inicializar Numeros
-	void inicializarNumeros() {
-		for (int i = 0; i < TABLERO_VERTICAL; i++) {
-			tablero[6][i] = 'P';
-			
-		
-		}
-		for (int j = 0; j < TABLERO_HORIZONTAL; j++)
-		{
-			tablero[1][j] = 'p';
-			
-		}
-	}
+        // Piezas
+        for (int j = 0; j < TABLERO_COLUMNAS; j++) {
+            char pieza = tablero[i][j];
+            
+            if (pieza == VACIO) {
+                SetConsoleTextAttribute(hConsole, 15); // Blanco/Gris brillante para *
+            } else if (isupper(pieza)) {
+                // Blancas
+                if (pieza == PEON_BLANCO) SetConsoleTextAttribute(hConsole, 15); // Blanco
+                else SetConsoleTextAttribute(hConsole, 12); // Rojo/Naranja
+            } else {
+                // Negras
+                if (pieza == PEON_NEGRO) SetConsoleTextAttribute(hConsole, 7); // Gris
+                else SetConsoleTextAttribute(hConsole, 11); // Cyan
+            }
 
-	void inicializarPiezas() {
-		//Piezas blancas
-		tablero[7][2] = TORRE_BLANCA;
-		tablero[7][3] = CABALLO_BLANCO;
-		tablero[7][4] = ALFIL_BLANCO;
-		tablero[7][5] = REINA_BLANCA;
-		tablero[7][6] = REY_BLANCO;
-		tablero[7][7] = ALFIL_BLANCO;
-		tablero[7][8] = CABALLO_BLANCO;
-		tablero[7][9] = TORRE_BLANCA;
-
-		//Piezas negras
-
-		tablero[0][-2] = TORRE_NEGRA;
-		tablero[0][-3] = CABALLO_NEGRO;
-		tablero[0][-4] = ALFIL_NEGRO;
-		tablero[0][-5] = REINA_NEGRA;
-		tablero[0][-6] = REY_NEGRO;
-		tablero[0][-7] = ALFIL_NEGRO;
-		tablero[0][-8] = CABALLO_NEGRO;
-		tablero[0][-9] = TORRE_NEGRA;
-	}
+            cout << pieza << " ";
+        }
+        cout << endl;
+    }
+    
+    // Reset color
+    SetConsoleTextAttribute(hConsole, 7);
+}
 
 int main() {
-
-	//Funciones
-	
-	inicializarTablero();
-	inicializarNumeros();
-	mostrarTablero();
-	
-	 
-return 0;
-
+    inicializarTablero();
+    mostrarTablero();
+    cin.get();
+    return 0;
 }
