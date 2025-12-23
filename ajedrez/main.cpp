@@ -12,8 +12,7 @@ void inicializarTablero() {
         }
     }
 
-    // 2. Colocar Piezas Negras (Fila 0 / Rank 8)
-    // Orden imagen: t h b k q b h t
+    // Orden: t h b k q b h t
     tablero[0][0] = TORRE_NEGRA;
     tablero[0][1] = CABALLO_NEGRO;
     tablero[0][2] = ALFIL_NEGRO;
@@ -23,13 +22,12 @@ void inicializarTablero() {
     tablero[0][6] = CABALLO_NEGRO;
     tablero[0][7] = TORRE_NEGRA;
 
-    // Peones Negros (Fila 1 / Rank 7)
+    // Peones Negros fila 1
     for (int j = 0; j < TABLERO_COLUMNAS; j++) {
         tablero[1][j] = PEON_NEGRO;
     }
 
-    // 3. Colocar Piezas Blancas (Fila 7 / Rank 1)
-    // Orden imagen: T H B Q K B H T
+    // Orden: T H B Q K B H T
     tablero[7][0] = TORRE_BLANCA;
     tablero[7][1] = CABALLO_BLANCO;
     tablero[7][2] = ALFIL_BLANCO;
@@ -39,15 +37,15 @@ void inicializarTablero() {
     tablero[7][6] = CABALLO_BLANCO;
     tablero[7][7] = TORRE_BLANCA;
 
-    // Peones Blancos (Fila 6 / Rank 2)
+    // Peones Blancos fila 6
     for (int j = 0; j < TABLERO_COLUMNAS; j++) {
         tablero[6][j] = PEON_BLANCO;
     }
 }
 
 void mostrarTablero() {
-    // Imprimir indices de columnas: 1 2 3 ... 8
-    std::cout << "   "; // Espacio para el numero de fila
+    // Imprimir columnas
+    std::cout << "   "; // Espacio para poner el numero de fila
     for (int j = 0; j < TABLERO_COLUMNAS; j++) {
         std::cout << j + 1 << " ";
     }
@@ -55,10 +53,10 @@ void mostrarTablero() {
 
     // Imprimir filas
     for (int i = 0; i < TABLERO_FILAS; i++) {
-        // Numero de fila a la izquierda (8 bajando a 1)
+        // Numero de fila a la izquierda del 8 al 1
         std::cout << 8 - i << "  ";
 
-        // Piezas
+        // Imprimir Piezas
         for (int j = 0; j < TABLERO_COLUMNAS; j++) {
             char pieza = tablero[i][j];
             std::cout << pieza << " ";
