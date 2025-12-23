@@ -1,8 +1,5 @@
 #include <iostream>
-#include <windows.h>
 #include "define.h"
-
-using namespace std;
 
 // Definición de la variable global
 char tablero[TABLERO_FILAS][TABLERO_COLUMNAS];
@@ -49,51 +46,30 @@ void inicializarTablero() {
 }
 
 void mostrarTablero() {
-    // Colores para consola Windows
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    
     // Imprimir indices de columnas: 1 2 3 ... 8
-    SetConsoleTextAttribute(hConsole, 9); // Azul claro
-    cout << "   "; // Espacio para el numero de fila
+    std::cout << "   "; // Espacio para el numero de fila
     for (int j = 0; j < TABLERO_COLUMNAS; j++) {
-        cout << j + 1 << " ";
+        std::cout << j + 1 << " ";
     }
-    cout << endl;
+    std::cout << std::endl;
 
     // Imprimir filas
     for (int i = 0; i < TABLERO_FILAS; i++) {
         // Numero de fila a la izquierda (8 bajando a 1)
-        SetConsoleTextAttribute(hConsole, 9); // Azul claro
-        cout << 8 - i << "  ";
+        std::cout << 8 - i << "  ";
 
         // Piezas
         for (int j = 0; j < TABLERO_COLUMNAS; j++) {
             char pieza = tablero[i][j];
-            
-            if (pieza == VACIO) {
-                SetConsoleTextAttribute(hConsole, 15); // Blanco/Gris brillante para *
-            } else if (isupper(pieza)) {
-                // Blancas
-                if (pieza == PEON_BLANCO) SetConsoleTextAttribute(hConsole, 15); // Blanco
-                else SetConsoleTextAttribute(hConsole, 12); // Rojo/Naranja
-            } else {
-                // Negras
-                if (pieza == PEON_NEGRO) SetConsoleTextAttribute(hConsole, 7); // Gris
-                else SetConsoleTextAttribute(hConsole, 11); // Cyan
-            }
-
-            cout << pieza << " ";
+            std::cout << pieza << " ";
         }
-        cout << endl;
+        std::cout << std::endl;
     }
-    
-    // Reset color
-    SetConsoleTextAttribute(hConsole, 7);
 }
 
 int main() {
     inicializarTablero();
     mostrarTablero();
-    cin.get();
+    std::cin.get();
     return 0;
 }
