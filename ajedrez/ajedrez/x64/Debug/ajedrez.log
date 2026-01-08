@@ -1,42 +1,53 @@
 ﻿  main.cpp
-C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(25,1): warning C4005: 'TORRE_BLANCA': macro redefinition
-  C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(9,1):
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(25,1): warning C4005: 'TORRE_BLANCA': macro redefinition
+  C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(9,1):
   see previous definition of 'TORRE_BLANCA'
   
-C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(26,1): warning C4005: 'CABALLO_BLANCO': macro redefinition
-  C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(10,1):
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(26,1): warning C4005: 'CABALLO_BLANCO': macro redefinition
+  C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(10,1):
   see previous definition of 'CABALLO_BLANCO'
   
-C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(27,1): warning C4005: 'ALFIL_BLANCO': macro redefinition
-  C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(11,1):
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(27,1): warning C4005: 'ALFIL_BLANCO': macro redefinition
+  C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(11,1):
   see previous definition of 'ALFIL_BLANCO'
   
-C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(28,1): warning C4005: 'REINA_BLANCA': macro redefinition
-  C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(12,1):
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(28,1): warning C4005: 'REINA_BLANCA': macro redefinition
+  C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(12,1):
   see previous definition of 'REINA_BLANCA'
   
-C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(29,1): warning C4005: 'REY_BLANCO': macro redefinition
-  C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(13,1):
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(29,1): warning C4005: 'REY_BLANCO': macro redefinition
+  C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(13,1):
   see previous definition of 'REY_BLANCO'
   
-C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(31,1): warning C4005: 'TORRE_NEGRA': macro redefinition
-  C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(15,1):
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(31,1): warning C4005: 'TORRE_NEGRA': macro redefinition
+  C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(15,1):
   see previous definition of 'TORRE_NEGRA'
   
-C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(32,1): warning C4005: 'CABALLO_NEGRO': macro redefinition
-  C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(16,1):
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(32,1): warning C4005: 'CABALLO_NEGRO': macro redefinition
+  C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(16,1):
   see previous definition of 'CABALLO_NEGRO'
   
-C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(33,1): warning C4005: 'ALFIL_NEGRO': macro redefinition
-  C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(17,1):
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(33,1): warning C4005: 'ALFIL_NEGRO': macro redefinition
+  C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(17,1):
   see previous definition of 'ALFIL_NEGRO'
   
-C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(34,1): warning C4005: 'REINA_NEGRA': macro redefinition
-  C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(18,1):
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(34,1): warning C4005: 'REINA_NEGRA': macro redefinition
+  C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(18,1):
   see previous definition of 'REINA_NEGRA'
   
-C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(35,1): warning C4005: 'REY_NEGRO': macro redefinition
-  C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(19,1):
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(35,1): warning C4005: 'REY_NEGRO': macro redefinition
+  C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(19,1):
   see previous definition of 'REY_NEGRO'
   
-  ajedrez.vcxproj -> C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\x64\Debug\ajedrez.exe
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(53,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(53,7): error C2371: 'std::cout': redefinition; different basic types
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iostream(39,75):
+  see declaration of 'std::cout'
+  
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(53,13): error C2059: syntax error: '<<'
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(60,15): error C2088: built-in operator '<<' cannot be applied to an operand of type 'std::ostream'
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(62,22): error C2563: mismatch in formal parameter list
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(62,22): error C2568: '<<': unable to resolve function overload
+  C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(62,22):
+  could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+  

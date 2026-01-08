@@ -34,9 +34,10 @@
 #define REINA_NEGRA 'q'
 #define REY_NEGRO 'k'
 
+
+
 // Declaración del tablero
 char tablero[TABLERO_VERTICAL][TABLERO_HORIZONTAL];
-
 
 
 	//Inicializar Tablero
@@ -49,7 +50,7 @@ char tablero[TABLERO_VERTICAL][TABLERO_HORIZONTAL];
 			}
 		}
 	}
-	
+
 	void mostrarTablero() {
 		for (int i = 0; i < TABLERO_VERTICAL; i++)
 		{
@@ -74,7 +75,7 @@ char tablero[TABLERO_VERTICAL][TABLERO_HORIZONTAL];
 			tablero[1][j] = 'p';
 			
 		}
-	}
+	}                  
 
 	void inicializarPiezas() {
 		//Piezas blancas
