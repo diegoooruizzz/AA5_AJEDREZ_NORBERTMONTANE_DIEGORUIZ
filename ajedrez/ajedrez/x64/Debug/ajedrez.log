@@ -39,15 +39,4 @@ C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORU
   C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(19,1):
   see previous definition of 'REY_NEGRO'
   
-C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(53,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(53,7): error C2371: 'std::cout': redefinition; different basic types
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iostream(39,75):
-  see declaration of 'std::cout'
-  
-C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(53,13): error C2059: syntax error: '<<'
-C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(60,15): error C2088: built-in operator '<<' cannot be applied to an operand of type 'std::ostream'
-C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(62,22): error C2563: mismatch in formal parameter list
-C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(62,22): error C2568: '<<': unable to resolve function overload
-  C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\main.cpp(62,22):
-  could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
-  
+  ajedrez.vcxproj -> C:\Users\NorbertMontaneBonet\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\ajedrez\x64\Debug\ajedrez.exe
