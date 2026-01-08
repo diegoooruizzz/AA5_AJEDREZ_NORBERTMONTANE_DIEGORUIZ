@@ -1,0 +1,12 @@
+﻿  main.cpp
+C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\Keylogger_NorbertMontane_DiegoRuiz\main.cpp(55,51): warning C4244: 'argument': conversion from 'DWORD' to 'const _Elem', possible loss of data
+C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\Keylogger_NorbertMontane_DiegoRuiz\main.cpp(55,51): warning C4244:         with
+C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\Keylogger_NorbertMontane_DiegoRuiz\main.cpp(55,51): warning C4244:         [
+C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\Keylogger_NorbertMontane_DiegoRuiz\main.cpp(55,51): warning C4244:             _Elem=char
+C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\Keylogger_NorbertMontane_DiegoRuiz\main.cpp(55,51): warning C4244:         ]
+C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\Keylogger_NorbertMontane_DiegoRuiz\main.cpp(88,72): warning C4244: 'argument': conversion from 'DWORD' to 'const _Elem', possible loss of data
+C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\Keylogger_NorbertMontane_DiegoRuiz\main.cpp(88,72): warning C4244:         with
+C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\Keylogger_NorbertMontane_DiegoRuiz\main.cpp(88,72): warning C4244:         [
+C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\Keylogger_NorbertMontane_DiegoRuiz\main.cpp(88,72): warning C4244:             _Elem=char
+C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\Keylogger_NorbertMontane_DiegoRuiz\main.cpp(88,72): warning C4244:         ]
+  Keylogger_NorbertMontane_DiegoRuiz.vcxproj -> C:\Users\DiegoRuizGamiz\Documents\GitHub\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\Keylogger_NorbertMontane_DiegoRuiz\x64\Debug\Keylogger_NorbertMontane_DiegoRuiz.exe
