@@ -2,6 +2,7 @@
 #include <string>
 #include <cstdlib>
 
+
 #define TABLERO_VERTICAL 8
 #define TABLERO_HORIZONTAL 8
 #define TABLERO_VACIO 0
