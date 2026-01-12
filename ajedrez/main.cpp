@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include "define.h"
-
+#include "main.h"
+#include <cstdlib>
 
 //definimos el tablero
 char tablero[TABLERO_FILAS][TABLERO_COLUMNAS];
@@ -121,41 +122,57 @@ bool esMovimientoValido(int fO, int cO, int fD, int cD) {//fO = fila de origen, 
 
 int main() {
 
+    system("cls");
     std::cout << "---------------------------" << std::endl;
     std::cout << "  JUEGO AJEDREZ" << std::endl;
     std::cout << "---------------------------" << std::endl;
+
     inicializarTablero();
+
+    bool turnoBlancas = true; // Empiezan las blancas
     int fO, cO, fD, cD;
 
     while (true) {
         mostrarTablero();
-        std::cout << "Mover de (fila col) por ejemplo (2 1, 3 1)  Empiezan blancas:: ";
-        std::cin >> fO >> cO;
-        std::cout << "A (fila col): ";
-        std::cin >> fD >> cD;
+
+        if (turnoBlancas)
+        {
+            std::cout << "Turno: BLANCAS" << std::endl;
+        }
+        else
+        {
+            std::cout << "Turno: NEGRAS" << std::endl;
+        }
+        std::cout << "Introduce movimiento (ejemplo= 2 1 3 1): ";
+        if (!(std::cin >> fO >> cO >> fD >> cD)) {
+            break; // Salir si el usuario mete algo que no sea un numero
+        }
 
         //ajuste de las coordenadas para que cuando nosotros pidamos una coordenada la array haga su efecto y borre -1 para que a nosotros nos de 0
-        int realFO = 8 - fO;
-        int realFD = 8 - fD;
-        int realCO = cO - 1;
-        int realCD = cD - 1;
+        int realFO = 1 - fO;
+        int realFD = 1 - fD;
+        int realCO = cO - 8;
+        int realCD = cD - 8;
 
-        if (esMovimientoValido(realFO, realCO, realFD, realCD)) {
-            tablero[realFD][realCD] = tablero[realFO][realCO];
-            tablero[realFO][realCO] = VACIO;
+
+        if (moverPieza(realFO, realCO, realFD, realCD)) //si el movimiento esta bien se cambia el turno 
+        {
+            turnoBlancas = !turnoBlancas;
         }
         else {
             std::cout << "¡Movimiento invalido!" << std::endl;
+            std::cin.ignore();
+            std::cin.get();
         }
     }
+
     return 0;
 
     std::cin >> fO >> cO >> fD >> cD;
 
     moverPieza(fO, cO, fD, cD);
     mostrarTablero();
-    std::cin.ignore();
-    std::cin.get();
+
 
     return 0;
 };
