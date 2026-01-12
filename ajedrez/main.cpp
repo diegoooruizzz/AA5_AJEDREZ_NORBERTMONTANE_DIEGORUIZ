@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include "define.h"
-#include "main.h"
+#include "inicializacion.h"
 #include <cstdlib>
 
 //definimos el tablero
@@ -149,10 +149,10 @@ int main() {
         }
 
         //ajuste de las coordenadas para que cuando nosotros pidamos una coordenada la array haga su efecto y borre -1 para que a nosotros nos de 0
-        int realFO = 1 - fO;
-        int realFD = 1 - fD;
-        int realCO = cO - 8;
-        int realCD = cD - 8;
+        int realFO = 8 - fO;
+        int realFD = 8 - fD;
+        int realCO = cO - 1;
+        int realCD = cD - 1;
 
 
         if (moverPieza(realFO, realCO, realFD, realCD)) //si el movimiento esta bien se cambia el turno 
