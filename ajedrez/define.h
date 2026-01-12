@@ -1,13 +1,13 @@
 #pragma once
 
-//Dimensiones del tablero
+// Dimensiones del tablero
 #define TABLERO_FILAS 8
 #define TABLERO_COLUMNAS 8
 
-//Caracteres del tablero
+// Caracteres del tablero
 #define VACIO '*'
 
-//Piezas Blancas de las filas 1-2
+// Piezas Blancas de las filas 1-2
 #define PEON_BLANCO 'P'
 #define TORRE_BLANCA 'T'
 #define CABALLO_BLANCO 'H'
@@ -15,7 +15,7 @@
 #define REINA_BLANCA 'Q'
 #define REY_BLANCO 'K'
 
-//Piezas Negras de las filas 7-8
+// Piezas Negras de las filas 7-8
 #define PEON_NEGRO 'p'
 #define TORRE_NEGRA 't'
 #define CABALLO_NEGRO 'h'
@@ -23,5 +23,5 @@
 #define REINA_NEGRA 'q'
 #define REY_NEGRO 'k'
 
-//Variable global del tablero
+// Variable global del tablero
 extern char tablero[TABLERO_FILAS][TABLERO_COLUMNAS];
