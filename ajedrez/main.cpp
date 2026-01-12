@@ -1,7 +1,7 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "define.h"
 
-//Definición de la variable global
+//Definiciï¿½n de la variable global
 char tablero[TABLERO_FILAS][TABLERO_COLUMNAS];
 
 void inicializarTablero() {
@@ -45,7 +45,7 @@ void inicializarTablero() {
 
 void mostrarTablero() {
     //Imprimir columnas y espacios para poner el numero de fila
-    std::cout << "   "; 
+    std::cout << "   ";
     for (int j = 0; j < TABLERO_COLUMNAS; j++) {
         std::cout << j + 1 << " ";
     }
@@ -53,10 +53,10 @@ void mostrarTablero() {
 
     //Imprimir filas
     for (int i = 0; i < TABLERO_FILAS; i++) {
-    //Numero de fila a la izquierda del 8 al 1
+        //Numero de fila a la izquierda del 8 al 1
         std::cout << 8 - i << " ";
 
-    //Imprimir Piezas
+        //Imprimir Piezas
         for (int j = 0; j < TABLERO_COLUMNAS; j++) {
             char pieza = tablero[i][j];
             std::cout << pieza << " ";
