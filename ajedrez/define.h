@@ -1,27 +1,24 @@
-#pragma once
+#ifndef DEFINE_H
+#define DEFINE_H
 
-// Dimensiones del tablero
 #define TABLERO_FILAS 8
 #define TABLERO_COLUMNAS 8
-
-// Caracteres del tablero
 #define VACIO '*'
 
-// Piezas Blancas de las filas 1-2
+// Blancas (mayúsculas)
 #define PEON_BLANCO 'P'
 #define TORRE_BLANCA 'T'
-#define CABALLO_BLANCO 'H'
-#define ALFIL_BLANCO 'B'
+#define CABALLO_BLANCO 'C'
+#define ALFIL_BLANCO 'A'
 #define REINA_BLANCA 'Q'
 #define REY_BLANCO 'K'
 
-// Piezas Negras de las filas 7-8
+// Negras (minúsculas)
 #define PEON_NEGRO 'p'
 #define TORRE_NEGRA 't'
-#define CABALLO_NEGRO 'h'
-#define ALFIL_NEGRO 'b'
+#define CABALLO_NEGRO 'c'
+#define ALFIL_NEGRO 'a'
 #define REINA_NEGRA 'q'
 #define REY_NEGRO 'k'
 
-// Variable global del tablero
-extern char tablero[TABLERO_FILAS][TABLERO_COLUMNAS];
+#endif

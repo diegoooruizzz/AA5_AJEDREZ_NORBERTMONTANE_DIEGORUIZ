@@ -32,9 +32,10 @@
               "RelativeDocumentMoniker": "define.h",
               "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\define.h",
               "RelativeToolTip": "define.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-10T11:18:58.403Z"
+              "WhenOpened": "2025-12-10T11:18:58.403Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,9 +45,10 @@
               "RelativeDocumentMoniker": "inicializacion.h",
               "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\inicializacion.h",
               "RelativeToolTip": "inicializacion.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-10T10:57:05.924Z"
+              "WhenOpened": "2025-12-10T10:57:05.924Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,7 +58,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAiwJkAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAmwL4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-10T09:16:06.309Z",
               "EditorCaption": ""
