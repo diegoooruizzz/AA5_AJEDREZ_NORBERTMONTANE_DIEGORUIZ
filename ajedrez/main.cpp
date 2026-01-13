@@ -124,7 +124,7 @@ int main() {
 
     system("cls");
     std::cout << "---------------------------" << std::endl;
-    std::cout << "  JUEGO AJEDREZ" << std::endl;
+    std::cout << "      JUEGO AJEDREZ" << std::endl;
     std::cout << "---------------------------" << std::endl;
 
     inicializarTablero();
@@ -145,7 +145,7 @@ int main() {
         }
         std::cout << "Introduce movimiento (ejemplo= 2 1 3 1): ";
         if (!(std::cin >> fO >> cO >> fD >> cD)) {
-            break; // Salir si el usuario mete algo que no sea un numero
+            break; // se acaba si introducimos una letra
         }
 
         //ajuste de las coordenadas para que cuando nosotros pidamos una coordenada la array haga su efecto y borre -1 para que a nosotros nos de 0
@@ -168,7 +168,7 @@ int main() {
 
     return 0;
 
-    std::cin >> fO >> cO >> fD >> cD;
+
 
     moverPieza(fO, cO, fD, cD);
     mostrarTablero();
