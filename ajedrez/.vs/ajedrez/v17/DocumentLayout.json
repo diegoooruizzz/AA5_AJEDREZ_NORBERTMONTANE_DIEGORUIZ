@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\",
+  "WorkspaceRootPath": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F46D7CFC-EC19-4F37-9758-19502F5C3F0D}|ajedrez.vcxproj|C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F46D7CFC-EC19-4F37-9758-19502F5C3F0D}|ajedrez.vcxproj|C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F46D7CFC-EC19-4F37-9758-19502F5C3F0D}|ajedrez.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F46D7CFC-EC19-4F37-9758-19502F5C3F0D}|ajedrez.vcxproj|C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F46D7CFC-EC19-4F37-9758-19502F5C3F0D}|ajedrez.vcxproj|solutionrelative:define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F46D7CFC-EC19-4F37-9758-19502F5C3F0D}|ajedrez.vcxproj|C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\inicializacion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F46D7CFC-EC19-4F37-9758-19502F5C3F0D}|ajedrez.vcxproj|solutionrelative:inicializacion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F46D7CFC-EC19-4F37-9758-19502F5C3F0D}|ajedrez.vcxproj|C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\inicializacion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F46D7CFC-EC19-4F37-9758-19502F5C3F0D}|ajedrez.vcxproj|solutionrelative:inicializacion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F46D7CFC-EC19-4F37-9758-19502F5C3F0D}|ajedrez.vcxproj|C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F46D7CFC-EC19-4F37-9758-19502F5C3F0D}|ajedrez.vcxproj|solutionrelative:define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,39 +26,37 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "define.h",
-              "DocumentMoniker": "C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\define.h",
+              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\define.h",
               "RelativeDocumentMoniker": "define.h",
-              "ToolTip": "C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\define.h",
+              "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\define.h",
               "RelativeToolTip": "define.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAACAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-10T11:18:58.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T11:18:58.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "inicializacion.h",
-              "DocumentMoniker": "C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\inicializacion.h",
+              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\inicializacion.h",
               "RelativeDocumentMoniker": "inicializacion.h",
-              "ToolTip": "C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\inicializacion.h",
+              "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\inicializacion.h",
               "RelativeToolTip": "inicializacion.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-10T10:57:05.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T10:57:05.924Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\main.cpp",
+              "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\AA5_AJEDREZ_NORBERTMONTANE_DIEGORUIZ\\ajedrez\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAACAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-10T09:16:06.309Z",
               "EditorCaption": ""
