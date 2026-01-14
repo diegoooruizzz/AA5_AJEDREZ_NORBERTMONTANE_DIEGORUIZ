@@ -16,7 +16,7 @@ void inicializarTablero() {
         }
     }
 
-    // Negras fila 0
+    //Fichas negro fila 0
     tablero[0][0] = TORRE_NEGRA;
     tablero[0][1] = CABALLO_NEGRO;
     tablero[0][2] = ALFIL_NEGRO;
@@ -26,7 +26,7 @@ void inicializarTablero() {
     tablero[0][6] = CABALLO_NEGRO;
     tablero[0][7] = TORRE_NEGRA;
 
-    // Blancas fila 7
+    //Fichas blancas fila 7
     tablero[7][0] = TORRE_BLANCA;
     tablero[7][1] = CABALLO_BLANCO;
     tablero[7][2] = ALFIL_BLANCO;
@@ -36,28 +36,28 @@ void inicializarTablero() {
     tablero[7][6] = CABALLO_BLANCO;
     tablero[7][7] = TORRE_BLANCA;
 
-    // Peones negros fila 1
+    //Peones negros fila 1
     for (int j = 0; j < TABLERO_COLUMNAS; j++) {
         tablero[1][j] = PEON_NEGRO;
     }
 
 
 
-    // Peones blancos fila 6
+    //Peones blancos fila 6
     for (int j = 0; j < TABLERO_COLUMNAS; j++) {
         tablero[6][j] = PEON_BLANCO;
     }
 }
 
 void mostrarTablero() {
-    // Columnas
+    //Columnas
     std::cout << "   ";
     for (int j = 0; j < TABLERO_COLUMNAS; j++) {
         std::cout << j + 1 << " ";
     }
     std::cout << std::endl;
 
-    // Filas (8 a 1)
+    //Filas de la 8 a la 1
     for (int i = 0; i < TABLERO_FILAS; i++) {
         std::cout << 8 - i << "  ";
         for (int j = 0; j < TABLERO_COLUMNAS; j++) {
@@ -67,28 +67,28 @@ void mostrarTablero() {
     }
 }
 
-// Comprueba si pieza es del color correcto
+//Comprueba si pieza es del color correcto
 bool esMiPieza(char pieza) {
     if (turnoBlancas)
         return std::isupper(pieza);
     return std::islower(pieza);
 }
 
-// PEÓN: 1 adelante o diagonal (solo si come)
+//peon 1 si va hacia delante o en diagonal si se come a otra pieza
 bool peonValido(int fO, int cO, int fD, int cD) {
     char pieza = tablero[fO][cO];
     char destino = tablero[fD][cD];
     int difFila = fD - fO;
     int difCol = std::abs(cD - cO);
 
-    // Blancas (hacia arriba)
+    //movimiento piezas blacas hacia arriba
     if (pieza == PEON_BLANCO) {
         if (difCol == 0 && difFila == -1 && destino == VACIO)
             return true;  // Adelante
         if (difFila == -1 && difCol == 1 && destino != VACIO && std::islower(destino))
             return true; // Come
     }
-    // Negras (hacia abajo)
+    //moviminento piezas negras hacia abajo
     else if (pieza == PEON_NEGRO) {
         if (difCol == 0 && difFila == 1 && destino == VACIO)
             return true;   // Adelante
