@@ -107,7 +107,7 @@ bool esMovimientoValido(int fO, int cO, int fD, int cD) {
     char pieza = tablero[fO][cO];
     char destino = tablero[fD][cD];
 
-    // No hay pieza, no es mía, capturo propia
+    //comprobacion para ver si la casilla q queremos mover hay una pieza o si donde vamos a mover hay otra pieza
     if (pieza == VACIO || !esMiPieza(pieza)) return false;
     if (destino != VACIO && esMiPieza(destino)) return false;
 
