@@ -2,10 +2,10 @@
 #define DEFINE_H
 
 #define TABLERO_FILAS 8
-#define TABLERO_COLUMNAS 8
+#define TABLERO_COLUMNAS 8 //definimos el tamaño del tablerro
 #define VACIO '*'
 
-// Blancas (mayúsculas)
+//definimos las piezas blancas con mayusculas
 #define PEON_BLANCO 'P'
 #define TORRE_BLANCA 'T'
 #define CABALLO_BLANCO 'C'
@@ -13,7 +13,7 @@
 #define REINA_BLANCA 'Q'
 #define REY_BLANCO 'K'
 
-// Negras (minúsculas)
+//definimos las negras con minusculas
 #define PEON_NEGRO 'p'
 #define TORRE_NEGRA 't'
 #define CABALLO_NEGRO 'c'
